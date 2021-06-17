@@ -1,0 +1,11 @@
+p{
+    border-style: dotted;
+    border-width: medium;
+    border-color: black;
+}
+head{
+    /*empty for now*/
+}
+body{
+    background-color: rgba(209, 234, 231, 1);
+}
