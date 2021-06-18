@@ -1,11 +1,33 @@
-p.one{
-    border-style: solid;
-    border-width: 0px 0px 1px 0px;
-    border-color: black;
+div{
+    /*blank for now*/
 }
+
+p.one{
+    color: rgb(53, 61, 97);
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+    border-color: black;
+    margin-top: 50px;
+    text-align: center;
+}
+
 head{
+    /* well this isn't working rn */
     /*empty for now*/
 }
+
+h1{
+    color: rgb(53, 61, 97);
+    text-align: center;
+}
+
+h2{
+    color: rgb(53, 61, 97);
+    text-align: center;
+    font-size: medium;
+}
+
 body{
+    
     background-color: rgba(209, 234, 231, 1);
 }
