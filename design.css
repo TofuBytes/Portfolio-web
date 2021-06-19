@@ -1,33 +1,40 @@
 div{
     /*blank for now*/
 }
-
-p.one{
+.one{
     color: rgb(53, 61, 97);
     border-style: solid;
-    border-width: 1px 0px 1px 0px;
-    border-color: black;
+    border-width: 0px 0px 1px 0px;
+    border-color: rgb(48, 58, 116);
     margin-top: 50px;
     text-align: center;
 }
-
-head{
-    /* well this isn't working rn */
-    /*empty for now*/
-}
-
-h1{
-    color: rgb(53, 61, 97);
-    text-align: center;
-}
-
-h2{
-    color: rgb(53, 61, 97);
-    text-align: center;
-    font-size: medium;
-}
-
 body{
-    
-    background-color: rgba(209, 234, 231, 1);
+    /*background-color: rgba(209, 234, 231, 1);*/
+    background-color: rgb(131, 171, 187);
+}
+.topnav {
+    overflow: hidden;
+    background-color: rgb(30, 31, 46);
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: rgb(122, 172, 206);
+}
+.footer {
+    color: rgb(53, 61, 97);
+    text-align: center;
+    padding: 10px;
+}
+
+.header{
+    color: rgb(53, 61, 97);
 }
