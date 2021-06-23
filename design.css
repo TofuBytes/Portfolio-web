@@ -2,7 +2,8 @@
 body{
     /*background-color: rgba(209, 234, 231, 1);*/
     /*background-color: rgb(131, 171, 187);*/
-    background-color: rgb(233, 219, 219);
+    /*background-color: rgb(233, 219, 219);*/
+    background-color: whitesmoke;
 }
 .header{
     font-family: 'averia libre';
@@ -18,17 +19,28 @@ body{
     display: block;
 }
 */
+
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(106, 157, 216)
+    /*text-decoration: underline;*/
+}  
 .flex-container{
     font-family: 'averia libre';
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
-
-
 }
 @media screen and (max-width: 600px) {
     .column.left, .column.right {
       width: 100%;
+      padding: 100;
     }
 }
 .row::after{
