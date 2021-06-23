@@ -1,9 +1,11 @@
-  
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300&display=swap');
 body{
     /*background-color: rgba(209, 234, 231, 1);*/
-    background-color: rgb(131, 171, 187);
+    /*background-color: rgb(131, 171, 187);*/
+    background-color: rgb(233, 219, 219);
 }
 .header{
+    font-family: 'averia libre';
     text-align: center;
 }
 /*
@@ -17,6 +19,7 @@ body{
 }
 */
 .flex-container{
+    font-family: 'averia libre';
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
@@ -34,6 +37,7 @@ body{
     clear: both;
 }
 .footer {
+    font-family: 'averia libre';
     color: rgb(30, 31, 46);
     text-align: center;
     padding: 10px;
