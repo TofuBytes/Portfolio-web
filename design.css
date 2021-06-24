@@ -3,9 +3,14 @@ body{
     /*background-color: rgba(209, 234, 231, 1);*/
     /*background-color: rgb(131, 171, 187);*/
     /*background-color: rgb(233, 219, 219);*/
+    text-indent: 20px;
+    font-size: medium;
+    font-weight: bolder;
+    font-family: 'averia libre';
     background-color: whitesmoke;
 }
 .header{
+    position: sticky;
     font-family: 'averia libre';
     text-align: center;
 }
@@ -19,7 +24,6 @@ body{
     display: block;
 }
 */
-
 a:link{
     text-decoration: none;
 }
