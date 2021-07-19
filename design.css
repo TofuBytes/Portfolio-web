@@ -9,17 +9,14 @@ body{
     font-family: 'averia libre';
     background-color: whitesmoke;
 }
-
 .header{
     position: sticky;
     font-family: 'averia libre';
     text-align: center;
 }
-
 .round {
     border-radius: 50%;
 }
-
 .info{
     font-size: large;
     font-family: 'averia libre';
@@ -50,17 +47,17 @@ a:hover {
     font-family: 'averia libre';
     display: flex;
     flex-wrap: nowrap;
+    height: 500px;
+    align-items: center;
     justify-content: center;
     column-gap: 3em;
 }
-
 @media screen and (max-width: 600px) {
     .column.left, .column.right {
       width: 100%;
-      text-align: left;
+      height: 100%;
     }
 }
-
 .row::after{
     content: "";
     display: table;
