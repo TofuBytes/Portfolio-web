@@ -9,6 +9,7 @@ body{
     font-family: 'averia libre';
     background-color: whitesmoke;
 }
+
 .header{
     position: sticky;
     font-family: 'averia libre';
@@ -22,8 +23,8 @@ body{
 .info{
     font-size: large;
     font-family: 'averia libre';
-    
 }
+
 /*
 .header-left{
     float: left;
@@ -48,21 +49,28 @@ a:hover {
 .flex-container{
     font-family: 'averia libre';
     display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    column-gap: 3em;
 }
+
 @media screen and (max-width: 600px) {
     .column.left, .column.right {
       width: 100%;
-      padding: 100;
+      text-align: left;
     }
 }
+
 .row::after{
     content: "";
     display: table;
     clear: both;
 }
 .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     font-family: 'averia libre';
     color: rgb(30, 31, 46);
     text-align: center;
