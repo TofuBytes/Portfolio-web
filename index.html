@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel = "stylesheet" href = "design.css"/> 
+        <link rel="icon" href="favicon.ico?" type="image/x-icon"/>
+        <title>ColorVate!</title>
+    </head>
+    <main>
+    <body onload="setColors()">
+        <div class="header">
+            <h2><a href="index.html">ColorVate!</a></h2>
+        </div>
+        <div class="header">
+            <span> <h3>
+                <a href="index.html">Brew</a> &nbsp
+                <a href="samples.html">Sample</a> &nbsp
+                <a href="contact.html">About</a> &nbsp
+                </h3>
+            </span>
+        </div><br><br>
+        <div class ="header">
+            Brew a Palette
+        </div> <br>
+        <div>
+        <div class="Palette">
+            <label for="colorpicker">Choose Initial Color: </label>
+            <input type="color" onchange="onBrew()" id="colorpicker" value="#9cddbf">  &nbsp  &nbsp
+            <button onclick="onBrew()" class="button-click" type="button"> Brew </button> 
+        </div> <br>
+            <div class="palette" id="pal1">
+                <input type="text" class="color-val" value="#9cddbf" id="input1" readonly/>
+                <button class="button" onclick="copyColor('input1')" class="button-click" type="button"> 
+                    <i class="fa fa-copy" style="font-size: medium;" aria-hidden="true"></i>
+                </button> 
+            </div>
+            <div class="palette" id="pal2">
+                <input type="text" class="color-val" value="#67a68a" id="input2" readonly/>
+                <button class="button" onclick="copyColor('input2')" type="button"> 
+                    <i class="fa fa-copy" style="font-size: medium;" aria-hidden="true"></i>
+                </button> 
+            </div>
+            <div class="palette" id="pal3">
+                <input type="text" class="color-val" value="#edbb99" id="input3" readonly/>
+                <button class="button" onclick="copyColor('input3')" type="button"> 
+                    <i class="fa fa-copy" style="font-size: medium;" aria-hidden="true"></i>
+                </button> 
+            </div>
+            <div class="palette" id="pal4">
+                <input type="text" class="color-val" value="#9cadbc" id="input4" readonly/>
+                <button class="button" onclick="copyColor('input4')" type="button"> 
+                    <i class="fa fa-copy" style="font-size: medium;" aria-hidden="true"></i>
+                </button> 
+            </div>
+            <div class="palette" id="pal5">
+                <input type="text" class="color-val" value="#d6f4ff" id="input5" readonly/>
+                <button class="button" onclick="copyColor('input5')" type="button"> 
+                    <i class="fa fa-copy" style="font-size: medium;" aria-hidden="true"></i>
+                </button> 
+            </div>
+
+        </div> <br> <br>
+        
+        <div class = "header"> Canvas </div> <br> <br>
+        <div class="Draw" style="text-align: center;">
+            <i class="fa fa-square"  onclick="setBrush('1')" aria-hidden="true" style="font-size: x-large; display: inline; margin: 10px; outline-color: black; outline-style: solid;" id="c1"></i>
+            <i class="fa fa-square"  onclick="setBrush('2')" aria-hidden="true" style="font-size: x-large; display: inline; margin: 10px; outline-color: black; outline-style: none;" id="c2"></i>
+            <i class="fa fa-square"  onclick="setBrush('3')" aria-hidden="true" style="font-size: x-large; display: inline; margin: 10px; outline-color: black; outline-style: none;"  id="c3"></i>
+            <i class="fa fa-square"  onclick="setBrush('4')" aria-hidden="true" style="font-size: x-large; display: inline; margin: 10px; outline-color: black; outline-style: none;" id="c4"></i>
+            <i class="fa fa-square"  onclick="setBrush('5')" aria-hidden="true" style="font-size: x-large; display: inline; margin: 10px; outline-color: black; outline-style: none;" id="c5"></i>
+            <i class="fa fa-eraser"  onclick= "setEraser()" aria-hidden="true" style="font-size: x-large; display: inline; margin: 10px; outline-color: black; " id="erase"></i>
+            <i class="fa fa-trash"   aria-hidden="true" style="font-size: x-large; display: inline; margin: 10px;" id ="reset"></i>
+
+            <br> <br>
+             <div class="flex-container3" style="text-align: center;">
+                <div class="column-left">
+                    <div id="pixel-art-area" \>
+                </div>
+            </div> 
+ 
+    </main>
+        <script src="palgen.js"></script>
+    </body>
+</html>

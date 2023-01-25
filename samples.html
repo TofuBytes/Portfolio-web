@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "design.css"/> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="favicon.ico?" type="image/x-icon"/>
+        <title>ColorVate!</title>
+    </head>
+    <body>
+        <div class="header">
+            <h2><a href="index.html">ColorVate!</a></h2>
+        </div>
+
+        <div class="header">
+            <span> <h3>
+                <a href="index.html">Brew</a> &nbsp
+                <a href="samples.html">Sample</a> &nbsp
+                <a href="contact.html">About</a> &nbsp
+                </h3>
+            </span>
+        </div>
+
+        <div class ="header">
+            Starter Palettes
+        </div> <br> 
+        <br>
+
+        <div class="flex-container2">
+            <div class="column left"> <br> <br> <br> <br>
+                <div class="fadein2">
+                    <div class="art">
+                    <p>
+                        <img class="sq-round" src= "pics/Pkm.jpg" alt="art1" style="width: 200px; height: 200px;">
+                    </p>
+                    </div> <br>
+                    <div class="art">
+                        <p>
+                            <img class="sq-round" src= "pics/Abby.jpg" alt="art1" style="width: 200px; height: 200px;">
+                        </p>
+                    </div> <br>
+                    <div class="art">
+                        <p>
+                            <img class="sq-round" src= "pics/Miku.jpg" alt="art1" style="width: 200px; height: 200px;">
+                        </p>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="column right2">
+                <div class="art">
+                Sample #1 <br>
+                    <div class="palette" id="Sample1" style="background-color: #FDEBD0;">
+                        <input type="text" class="color-val" value="#fdebd0" id="input1" readonly/>
+                        <button class="button" onclick="copyColor('input1')" type="button">
+                            <i class="fa fa-copy" style="font-size: medium;" aria-hidden="true"></i>
+                        </button> 
+                    </div>
+                    <div class="palette" id="pal2" style="background-color:#D98880;"> 
+                        <input type="text" class="color-val" value="#daac68" id="input2" readonly/>
+                        <button class="button" onclick="copyColor('input2')" type="button"> 
+                            <i class="fa fa-copy" style="font-size: medium;" aria-hidden="true"></i>
+                         </button> 
+                    </div>
+                    <div class="palette" id="pal3" style="background-color: #ABB2B9;"> 
+                        <input type="text" class="color-val" value="#fef9e7" id="input3" readonly/>
+                        <button class="button" onclick="copyColor('input3')" type="button"> 
+                            <i class="fa fa-copy" style="font-size: medium;" aria-hidden="true"></i>
+                        </button> 
+                    </div>
+                    <div class="palette" id="pal4" style="background-color:#BA4A00">
+                        <input type="text" class="color-val" value="#ba4a00" id="input4" readonly/>
+                        <button class="button" onclick="copyColor('input4')" type="button"> 
+                            <i class="fa fa-copy" style="font-size: medium;" aria-hidden="true"></i>
+                        </button> 
+                    </div>
+                    <div class="palette" id="pal5" style="background-color:#FEF9E7;">
+                        <input type="text" class="color-val" value="#fef9e7" id="input5" readonly/>
+                        <button class="button" onclick="copyColor('input5')" type="button"> 
+                            <i class="fa fa-copy" style="font-size: medium;" aria-hidden="true"></i>
+                        </button> 
+                    </div>
+                </div> <br> <br>
+                <div class="art">
+                    Sample #2 <br>
+                        <div class="palette" id="Sample1" style="background-color: #80A991;">
+                            <input type="text" class="color-val" value="#80a991" id="input1-2" readonly/>
+                            <button class="button" onclick="copyColor('input1-2')" type="button"> 
+                                <i class="fa fa-copy" style="font-size: medium;" aria-hidden="true"></i>
+                            </button> 
+                        </div>
+                        <div class="palette" id="pal2" style="background-color:#34495E;"> 
+                            <input type="text" class="color-val" value="#34495e" id="input2-2" readonly/>
+                            <button class="button" onclick="copyColor('input2-2')" type="button"> 
+                                <i class="fa fa-copy" style="font-size: medium;" aria-hidden="true"></i>
+                            </button> 
+                        </div>
+                        <div class="palette" id="pal3" style="background-color: #F9E79F;"> 
+                            <input type="text" class="color-val" value="#fef9e7" id="input3-2" readonly/>
+                            <button class="button" onclick="copyColor('input3-2')" type="button"> 
+                                <i class="fa fa-copy" style="font-size: medium;" aria-hidden="true"></i>
+                            </button> 
+                        </div>
+                        <div class="palette" id="pal4" style="background-color: #C8F7F5">
+                            <input type="text" class="color-val" value="#c8f7f5" id="input4-2" readonly/>
+                            <button class="button" onclick="copyColor('input4-2')" type="button"> 
+                                <i class="fa fa-copy" style="font-size: medium;" aria-hidden="true"></i>
+                            </button> 
+                        </div>
+                        <div class="palette" id="pal5" style="background-color:#FDEBD0;">
+                            <input type="text" class="color-val" value="#fdebd0" id="input5-2" readonly/>
+                            <button class="button" onclick="copyColor('input5-2')" type="button"> 
+                                <i class="fa fa-copy" style="font-size: medium;" aria-hidden="true"></i>
+                            </button> 
+                        </div>
+                </div> <br> <br>
+                <div class="art">
+                    Sample #3 <br>
+                        <div class="palette" id="Sample1" style="background-color: #B2D8F4;">
+                            <input type="text" class="color-val" value="#b2d8f4" id="input1-3" readonly/>
+                            <button class="button" onclick="copyColor('input1-3')" type="button"> 
+                                <i class="fa fa-copy" style="font-size: medium;" aria-hidden="true"></i>
+                            </button> 
+                        </div>
+                        <div class="palette" id="pal2" style="background-color:#E5E9EA;"> 
+                            <input type="text" class="color-val" value="#e5e9ea" id="input2-3" readonly/>
+                            <button class="button" onclick="copyColor('input2-3')" type="button"> 
+                                <i class="fa fa-copy" style="font-size: medium;" aria-hidden="true"></i>
+                            </button> 
+                        </div>
+                        <div class="palette" id="pal3" style="background-color: #FFF0C8;"> 
+                            <input type="text" class="color-val" value="#fff0c8" id="input3-3" readonly/>
+                            <button class="button" onclick="copyColor('input3-3')" type="button"> 
+                                <i class="fa fa-copy" style="font-size: medium;" aria-hidden="true"></i>
+                            </button> 
+                        </div>
+                        <div class="palette" id="pal4" style="background-color: #FF9CF9">
+                            <input type="text" class="color-val" value="#ff9cf9" id="input4-3" readonly/>
+                            <button class="button" onclick="copyColor('input4-3')" type="button"> 
+                                <i class="fa fa-copy" style="font-size: medium;" aria-hidden="true"></i>
+                            </button> 
+                        </div>
+                        <div class="palette" id="pal5" style="background-color:#C8F7F5 ;">
+                            <input type="text" class="color-val" value="#c8f7f5" id="input5-3" readonly/>
+                            <button class="button" onclick="copyColor('input5-3')" type="button"> 
+                                <i class="fa fa-copy" style="font-size: medium;" aria-hidden="true"></i>
+                            </button> 
+                        </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--<div class="footer">
+            <p>ColorVate!</p>
+        </div>-->
+        <script src="palgen.js"></script>
+    </body>
+</html>
